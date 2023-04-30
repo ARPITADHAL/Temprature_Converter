@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pic.jpg" type="image/x-icon">
+    <title>Temprature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsubmit="cal(); return false">
+    <div class="heading">
+        <h1>Temprature Converter</h1>  
+    </div>
+
+    <div class="container">
+        <div class="converter">
+            <div class="ip">
+                <label for="inp">Input</label>
+                <input type="number" id="inp">
+            </div>
+            <div class="ty">
+                <label for="typ">Type</label> <br>
+                <select name="diff" id="diff">
+                    <option value="cel">°Celsius</option>
+                    <option value="feh">°Fahrenheit</option>
+                </select>
+            </div>
+        </div>
+        <div class="sub">
+            <button id="sub">Submit</button>
+        </div>  
+        <div class="res">
+            <br> <br> <br> <br> <br>
+            <label for="res">Result</label>
+            <input type="number" id="res" >
+        </div> 
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
